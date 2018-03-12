@@ -1,0 +1,46 @@
+{
+    "name": "timobakx/controller-annotation-routing-bundle",
+    "type": "symfony-bundle",
+    "description": "Bundle to automatically load all controllers through the annotation routing",
+    "license": "MIT",
+    "require": {
+        "php": "^7.1.3",
+        "symfony/config": "^4.0",
+        "symfony/dependency-injection": "^4.0",
+        "symfony/framework-bundle": "^4.0",
+        "symfony/yaml": "^4.0",
+        "zendframework/zend-code": "^3.3"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "symfony/dotenv": "^4.0"
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "TimoBakx\\ControllerAnnotationRoutingBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TimoBakx\\ControllerAnnotationRoutingBundle\\Tests\\": "tests/"
+        }
+    },
+    "replace": {
+        "symfony/polyfill-iconv": "*",
+        "symfony/polyfill-php71": "*",
+        "symfony/polyfill-php70": "*",
+        "symfony/polyfill-php56": "*"
+    },
+    "extra": {
+        "symfony": {
+            "id": "01C8DHCSFR0FZ8DMWRXHM5W6ZR",
+            "allow-contrib": false
+        }
+    }
+}

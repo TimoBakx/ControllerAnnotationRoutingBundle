@@ -1,0 +1,15 @@
+parameters:
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    TimoBakx\ControllerAnnotationRoutingBundle\:
+        resource: '../../*'
+
+    TimoBakx\ControllerAnnotationRoutingBundle\Routing\ControllerAnnotationLoader:
+        tags: ['routing.loader']
+
+    Symfony\Bundle\FrameworkBundle\Routing\AnnotatedRouteControllerLoader: ~
